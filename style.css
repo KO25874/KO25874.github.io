@@ -336,6 +336,10 @@ body {
   margin: 0 0 .8rem;
 }
 
+#modal-comment {
+  color: #000;
+}
+
 /* Reveal animation */
 .revealed {
   opacity: 1;
