@@ -304,6 +304,11 @@ body {
   background: #222;
 }
 
+
+#modal-comment {
+  color: #000;
+}
+
 .gradient-a {
   background: linear-gradient(135deg, #c7d2fe, #a7f3d0);
 }
@@ -334,10 +339,6 @@ body {
 
 .card-text {
   margin: 0 0 .8rem;
-}
-
-#modal-comment {
-  color: #000;
 }
 
 /* Reveal animation */
