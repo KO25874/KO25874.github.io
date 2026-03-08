@@ -1,227 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="utf-8">
-  <title>Portfolio - Koh Uchimi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
-  <meta name="description" content="内定者懇談会用のカジュアルな自己紹介サイト。">
-  <meta name="theme-color" content="#2563eb">
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="icon" href="assets/kame_kaeru.png" type="image/png">
-  <link rel="preload" href="assets/KOH1.jpeg" as="image" type="image/jpeg">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | 制作中</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 制作中ページ用の最小追加CSS */
+    .coming-soon-panel {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: color-mix(in oklab, var(--panel) 78%, transparent);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
 
+    .coming-soon-badge {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      background: color-mix(in oklab, var(--brand) 18%, transparent);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .coming-soon-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      color: #fff;
+    }
+
+    .coming-soon-text {
+      margin: 0 auto 1.5rem;
+      max-width: 38rem;
+      color: #e5e7eb;
+      font-size: 1rem;
+    }
+
+    .coming-soon-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .coming-soon-links a {
+      display: inline-block;
+      padding: 0.8rem 1.1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: color-mix(in oklab, var(--surface) 75%, transparent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .coming-soon-links a:hover {
+      background: color-mix(in oklab, var(--brand) 20%, transparent);
+      text-decoration: none;
+    }
+
+    .status-note {
+      margin-top: 1rem;
+      font-size: 0.92rem;
+      color: #d1d5db;
+    }
+  </style>
+</head>
 <body>
   <header class="site-header">
-    <div class="header-inner container">
-      <a href="#home" class="brand">
-        <span class="brand-text">Koh Uchimi · Portfolio</span>
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <span class="brand-text">Koh Portfolio</span>
       </a>
-      <nav class="nav">
-        <button class="nav-toggle">
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-        </button>
-        <ul id="nav-menu" class="nav-list">
-          <li><a href="#aboutme">自己紹介</a></li>
-          <li><a href="#student">学生時代の取り組み</a></li>
-          <li><a href="#recent">近況報告</a></li>
-          <li><a href="#person">人となり</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
-  <section id="home" class="hero">
-    <div class="hero-inner container">
-      <h1 class="hero-title">はじめまして、内海 公です。</h1>
-      <p class="hero-subtitle">同期の皆さんに見てもらうことを想定してカジュアルな構成にしています。ご了承ください。</p>
-      <div class="hero-cta">
-        <a class="icon" href="https://www.instagram.com/ko25874/" target="_blank">
-          <img src="assets/Instagram_Glyph_White.png" alt=Instagram>
-        </a>
-        <a class="icon" href="https://x.com/Ko25874" target="_blank">
-          <img src="assets/logo-white.png" alt=Twitter>
-        </a>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="coming-soon-panel">
+          <p class="coming-soon-badge">Now Building</p>
+          <h1 class="coming-soon-title">ポートフォリオサイトは現在制作中です</h1>
+          <p class="coming-soon-text">
+            ご覧いただきありがとうございます。<br>
+            作品紹介・プロフィール・制作実績を順次追加しています。<br>
+            公開まで、もう少しお待ちください。
+          </p>
+
+          <div class="coming-soon-links">
+            <a href="mailto:yourmail@example.com">お問い合わせ</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+
+          <p class="status-note">
+            ※ 現在、デザイン・作品整理・テキスト調整を進行中です。
+          </p>
+        </div>
       </div>
-      <div class="hero-devices">
-        <div class="device phone"></div>
-        <div class="device tablet"></div>
-        <div class="device laptop"></div>
-      </div>
-    </div>
-    <div class="scroll-cue">▼</div>
-  </section>
 
-  <main id="aboutme" class="Aboutme">
-    <h2 class="section-title container">自己紹介</h2>
-    <div class="card-grid container">
-      <!-- Card 1 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH5.jpeg" data-comment="高校１年生の姿">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">基本情報</h3>
-        <ul class="card-body">
-          <li class="card-sub">國學院大学 経済学部 経営学科</li>
-          <li class="card-sub">仙台 ⇒ 東京(大学から)</li>
-          <li class="card-sub">マネジメント・マーケティング・DX</li>
-        </ul>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card reveal-on-scroll" data-img="assets/Wine.jpeg" data-comment="バイト先の友人と定期開催のワイン会">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">好き</h3>
-        <ul class="card-body">
-          <li class="card-sub">音楽（ジャズを中心に幅広く）</li>
-          <li class="card-sub">お酒（基本、綺麗に飲みます）</li>
-          <li class="card-sub">読書（新書ブーム中）</li>
-        </ul>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card reveal-on-scroll" data-img="assets/Pizza.jpeg" data-comment="自家製ピザ">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">得意</h3>
-        <ul class="card-body">
-          <li class="card-sub">運動全般（野球は下手くそ）</li>
-          <li class="card-sub">ジャズギター</li>
-          <li class="card-sub">料理（洋食が多め）</li>
-        </ul>
-      </article>
-    </div>
+      <div class="scroll-cue">Coming Soon</div>
+    </section>
   </main>
 
-  <main id="student" class="Student">
-    <h2 class="section-title container">学生時代の取り組み</h2>
-    <div class="card-grid container">
-      <!-- Card 1 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH6.jpeg" data-comment="更衣室でパシャリ">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">渋谷レストランのアルバイト</h3>
-        <ul class="card-body">
-          <li class="card-sub">学生&エキスパタイザーマネージャーを兼任</li>
-          <li class="card-sub">ホールとキッチンの中間的存在</li>
-          <li class="card-sub">食品の品質管理とアレルギー対応など</li>
-        </ul>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card reveal-on-scroll" data-img="assets/Book.jpeg" data-comment="P.F.ドラッカーのマネジメント">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">マーケティングゼミ</h3>
-        <ul class="card-body">
-          <li class="card-sub">中国のマーケティング・DXなどが研究対象</li>
-          <li class="card-sub">卒論は日中のスーパーアプリの比較検討</li>
-          <li class="card-sub">バイブルはドラッカーのマネジメント</li>
-        </ul>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH9.jpeg" data-comment="当日全員風邪ひいて一人で弾くことに">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">サークル</h3>
-        <ul class="card-body">
-          <li class="card-sub">ジャズ研究会に所属</li>
-          <li class="card-sub">副部長と会計を兼任</li>
-          <li class="card-sub">孤軍奮闘しました</li>
-        </ul>
-      </article>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 Koh Portfolio</small>
     </div>
-  </main>
-
-  <main id="recent" class="Recent">
-    <h2 class="section-title container">近況報告</h2>
-    <div class="card-grid container">
-      <!-- Card 1 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH8.jpeg" data-comment="会場と同じビルに小島プロダクションがあったので記念撮影">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">ビジネスコンテスト</h3>
-        <ul class="card-body">
-          <li class="card-sub">ゼミの一環でビジネスコンテストに応募</li>
-          <li class="card-sub">某空間デザイン系企業のビジコンで入賞</li>
-          <li class="card-sub">審査員特別賞でした</li>
-        </ul>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH7.jpeg" data-comment="誕生日プレゼントのデカジョッキ">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">新潟旅行</h3>
-        <ul class="card-body">
-          <li class="card-sub">大学入学からの友達とプレ卒業旅行へ</li>
-          <li class="card-sub">新潟の村上・瀬波温泉</li>
-          <li class="card-sub">運転手だったのでお酒は控えめ、、、</li>
-        </ul>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH10.jpeg" data-comment="パビリオンは入れなかったのでガンダム像だけ">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">万博旅行</h3>
-        <ul class="card-body">
-          <li class="card-sub">駆け込み万博で激混雑</li>
-          <li class="card-sub">スペイン、ネパール、インド、スイスなど</li>
-          <li class="card-sub">ガンダム見たかったけど予約取れず断念、、、</li>
-        </ul>
-      </article>
-    </div>
-  </main>
-
-
-  <main id="person" class="person">
-    <h2 class="section-title container">人となり</h2>
-    <div class="card-grid container">
-      <!-- Card 1 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH3.jpeg" data-comment="">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">こだわりあり</h3>
-        <ul class="card-body">
-          <li class="card-sub">公私共に細かいことにこだわるタイプ</li>
-          <li class="card-sub">功：クオリティ・ディテール◎</li>
-          <li class="card-sub">罪：割と頻繁にめんどくさがられる</li>
-        </ul>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH4.jpeg" data-comment="">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">強火でサッと</h3>
-        <ul class="card-body">
-          <li class="card-sub">ハマったらのめり込んでヘビロテ</li>
-          <li class="card-sub">内容より火力で勝負</li>
-          <li class="card-sub">消火も早め</li>
-        </ul>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card reveal-on-scroll" data-img="assets/KOH2.jpeg" data-comment="">
-        <picture class="card-media gradient-a"></picture>
-        <h3 class="card-title">自己投資(?)は惜しまず</h3>
-        <ul class="card-body">
-          <li class="card-sub">飲み会・旅行・イベント大好きです</li>
-          <li class="card-sub">お誘いには全力で乗っかるタイプ</li>
-          <li class="card-sub">体力があるうちに色々楽しみましょう！！</li>
-        </ul>
-      </article>
-    </div>
-  </main>
-
-  <footer class="site-footer container">
-    <small>© <span id="year"></span> Koh Uchimi.</small>
   </footer>
-
-  <!-- モーダル -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <img id="modal-img" src="" alt="カード画像">
-      <p id="modal-comment"></p>
-    </div>
-  </div>
-
-  <script src="script.js" defer></script>
 </body>
-
 </html>
