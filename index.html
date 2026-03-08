@@ -6,7 +6,6 @@
   <title>Portfolio | 制作中</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* 制作中ページ用の最小追加CSS */
     .coming-soon-panel {
       max-width: 720px;
       margin: 0 auto;
@@ -39,33 +38,42 @@
     }
 
     .coming-soon-text {
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 1.25rem;
       max-width: 38rem;
       color: #e5e7eb;
       font-size: 1rem;
     }
 
-    .coming-soon-links {
+    .hero-cta {
       display: flex;
       justify-content: center;
-      gap: 0.8rem;
-      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
-    .coming-soon-links a {
-      display: inline-block;
-      padding: 0.8rem 1.1rem;
-      border-radius: 12px;
+    .hero-cta .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
       border: 1px solid var(--border);
-      background: color-mix(in oklab, var(--surface) 75%, transparent);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
+      background: color-mix(in oklab, var(--surface) 78%, transparent);
+      transition: transform 0.2s ease, background 0.2s ease;
     }
 
-    .coming-soon-links a:hover {
+    .hero-cta .icon:hover {
+      transform: translateY(-2px);
       background: color-mix(in oklab, var(--brand) 20%, transparent);
-      text-decoration: none;
+    }
+
+    .hero-cta .icon img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      display: block;
     }
 
     .status-note {
@@ -96,9 +104,13 @@
             公開まで、もう少しお待ちください。
           </p>
 
-          <div class="coming-soon-links">
-            <a href="mailto:yourmail@example.com">お問い合わせ</a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <div class="hero-cta">
+            <a class="icon" href="https://www.instagram.com/ko25874/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="assets/Instagram_Glyph_White.png" alt="Instagram">
+            </a>
+            <a class="icon" href="https://x.com/Ko25874" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src="assets/logo-white.png" alt="X">
+            </a>
           </div>
 
           <p class="status-note">
